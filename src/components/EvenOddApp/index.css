@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 10px;
+  text-align: center;
+  font-family: Roboto;
+}
+.card {
+  height: 350px;
+  width: 350px;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #ff6e7f, #bfe9ff);
+}
+
+.btn {
+  border-radius: 10px;
+  height: 35px;
+  width: 100px;
+  border-width: 0px;
+}
+.text {
+  font-size: 12px;
+}
