@@ -5,12 +5,11 @@ import './index.css'
 class EvenOddApp extends Component {
   state = {count: 0}
 
+  getRandomNumber = () => Math.ceil(Math.random() * 100)
+
   increment = () => {
-    this.setState(prevState => {
-      console.log(`prevCount: ${prevState.count}`)
-      const randomNumber = Math.ceil(Math.random() * 10)
-      return {count: prevState.count + randomNumber}
-    })
+    const randomNumber = this.getRandomNumber()
+    this.setState(prevState => ({count: prevState.count + randomNumber}))
   }
 
   render() {
